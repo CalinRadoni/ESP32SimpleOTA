@@ -50,10 +50,37 @@ public:
      */
     esp_err_t CheckApplicationImage(void);
 
+    /**
+     * @brief Return the maximum allowed image size
+     *
+     * @return
+     *  - the size of the next update partition
+     *  - zero in case of any error
+     */
     uint32_t GetMaxImageSize(void);
 
+    /**
+     * @brief The Begin from Begin -> Write -> ... -> Write -> End
+     *
+     * @return ESP_OK or ESP_FAIL
+     */
     esp_err_t Begin(void);
+
+    /**
+     * @brief The Write from Begin -> Write -> ... -> Write -> End
+     *
+     * @return ESP_OK or ESP_FAIL
+     */
     esp_err_t Write(char* data, int length);
+
+    /**
+     * @brief The End from Begin -> Write -> ... -> Write -> End
+     *
+     * If the return value is ESP_OK, the updated partition has
+     * been set as the new boot partition.
+     *
+     * @return ESP_OK or ESP_FAIL
+     */
     esp_err_t End(void);
 
 protected:

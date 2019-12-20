@@ -154,4 +154,3 @@ esp_err_t ESP32SimpleOTA::End(void)
 
     return ESP_OK;
 }
-
