@@ -1,5 +1,7 @@
 # Helper component for ESP32 Over The Air Updates
 
+[![Build Status](https://travis-ci.com/CalinRadoni/ESP32SimpleOTA.svg?branch=master)](https://travis-ci.com/CalinRadoni/ESP32SimpleOTA)
+
 ## Dependencies
 
 [Espressif IoT Development Framework](https://github.com/espressif/esp-idf).
