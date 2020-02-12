@@ -1,7 +1,7 @@
 # Travis CI integration file for
 # esp-idf "stable" release
 #
-# In 2019.12.22 the stable release was v3.3.1
+# In 2020.02.11 the stable release was v3.3.1
 
 os: linux
 dist: xenial
@@ -36,13 +36,12 @@ install:
   - export PATH="$HOME/esp/xtensa-esp32-elf/bin:$PATH"
   - export IDF_PATH=~/esp/esp-idf
   - export PATH="$IDF_PATH/tools:$PATH"
-  - printenv PATH
   - python -m pip install --user -r $IDF_PATH/requirements.txt
 
 script:
   - cd $TRAVIS_BUILD_DIR/example
   - idf.py reconfigure
-  - idf.py build
+  - idf.py app
 
 after_success:
   - cd $TRAVIS_BUILD_DIR/example
