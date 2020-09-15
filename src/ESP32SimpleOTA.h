@@ -97,6 +97,4 @@ protected:
 private:
 };
 
-extern ESP32SimpleOTA simpleOTA;
-
 #endif

@@ -37,6 +37,8 @@ extern "C" {
 
     void app_main()
     {
+        ESP32SimpleOTA simpleOTA;
+
         esp_err_t err = simpleOTA.CheckApplicationImage();
         if (err == ESP_ERR_OTA_ROLLBACK_FAILED) {
             ESP_LOGE(TAG, "Current application image is NOT valid and rollback failed!");

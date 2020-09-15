@@ -24,8 +24,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 static const char* TAG = "SimpleOTA";
 
-ESP32SimpleOTA simpleOTA;
-
 // -----------------------------------------------------------------------------
 
 ESP32SimpleOTA::ESP32SimpleOTA(void)
