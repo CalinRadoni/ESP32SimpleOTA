@@ -1,6 +1,6 @@
 # Helper component for ESP32 Over The Air Updates
 
-[![Build Status](https://travis-ci.com/CalinRadoni/ESP32SimpleOTA.svg?branch=master)](https://travis-ci.com/CalinRadoni/ESP32SimpleOTA)
+![Build with ESP-IDF v4.1](https://github.com/CalinRadoni/ESP32SimpleOTA/workflows/Build%20with%20ESP-IDF%20v4.1/badge.svg)
 
 ## Dependencies
 
